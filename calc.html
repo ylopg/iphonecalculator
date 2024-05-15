@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am the operator of my computer calculator">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="cascade.css">
+</head>
+
+<body class="calc-core">
+    <div class="calculator">
+
+        <div class="screen">
+        <p id="displayOperation"></p>
+        <div id="screenInput">
+        </div>
+        </div>
+        <div class="calculator-item"><button type="button" onclick="memoryClear()"
+            class="button light-button">mc</button></div>
+
+    <div class="calculator-item"><button type="button" class="button light-button" onclick="memoryRecovery()">mr</button></div>
+
+    <div class="calculator-item"><button type="button" class="button light-button" onclick="memoryPlus()">m+</button></div>
+
+    <div class="calculator-item"><button type="button" class="button light-button"
+            onclick="memoryMinus()">m-</button></div>
+
+        <div class="calculator-item"><button type="button" onclick="cleanInput()"
+                class="button light-button">AC</button></div>
+
+        <div class="calculator-item"><button type="button" class="button light-button" onclick="positifNegatif()">&#177;</button></div>
+
+        <div class="calculator-item"><button type="button" class="button light-button" onclick="pcent()">&#37;</button></div>
+
+        <div class="calculator-item"><button type="button" class="button orange-button divide"
+                onclick="operatorFunction('/')">&#247;</button></div>
+
+        <div class="calculator-item"><button type="button" class="button" onclick="display(7)">7</button></div>
+
+        <div class="calculator-item"><button type="button" class="button" onclick="display(8)">8</button></div>
+
+        <div class="calculator-item"><button type="button" class="button" onclick="display(9)">9</button></div>
+
+        <div class="calculator-item"><button type="button" class="button orange-button multiply"
+                onclick="operatorFunction('*')">X</button></div>
+
+        <div class="calculator-item"><button type="button" class="button" onclick="display(4)">4</button></div>
+
+        <div class="calculator-item"><button type="button" class="button" onclick="display(5)">5</button></div>
+
+        <div class="calculator-item"><button type="button" class="button" onclick="display(6)">6</button></div>
+
+        <div class="calculator-item"><button type="button" class="button orange-button substract"
+                onclick="operatorFunction('-')">&#45;</button></div>
+
+
+        <div class="calculator-item"><button type="button" class="button" onclick="display(1)">1</button></div>
+
+
+        <div class="calculator-item"><button type="button" class="button" onclick="display(2)">2</button></div>
+        <div class="calculator-item"><button type="button" class="button" onclick="display(3)">3</button></div>
+
+        <div class="calculator-item"><button type="button" class="button orange-button add-button"
+                onclick="operatorFunction('+')">&#43;</button></div>
+
+        <div class="calculator-item double"><button type="button" class="button double-button"
+                onclick="displayZero()">0</button></div>
+
+        
+        <div class="calculator-item"><button type="button" class="button" onclick="displayDecimals()">&#44;</button></div>
+
+
+        <div class="calculator-item"><button type="button" onclick="equalsTo()"
+                class="button red-button">&#61;</button></div>
+        <div class="calculator-item"><button type="button" class="button light-button" onclick="square()">x<sup>2</sup></button></div>
+        <div class="calculator-item"><button type="button" class="button light-button" onclick="cube()">x<sup>3</sup></button></div>
+        <div class="calculator-item"><button type="button" class="button light-button" onclick="display(3.141593)">&#960;</button></div>
+        <div class="calculator-item"><button type="button" class="button light-button" onclick="root()"><sup>2</sup>&#8730;</button></div>
+        <div class="calculator-item"><button type="button" onclick="openParenthesis()"
+        class="button orange-button">(</button></div>
+        <div class="calculator-item"><button type="button" onclick="closeParenthesis()"
+                class="button orange-button">)</button></div>
+        <div class="calculator-item"><button type="button" onclick="operatorFunction('^')"
+        class="button orange-button">^</button></div>
+        <div class="calculator-item"><button type="button" onclick="operatorFunction('%')"
+        class="button orange-button"><small>mod</small></button></div>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

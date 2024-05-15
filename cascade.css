@@ -1,0 +1,123 @@
+.calc-core {
+    background-color: whitesmoke;
+}
+
+#calculatorScreen {
+    width: 600px;
+    border: 10px solid;
+}
+.calculator-item {
+    padding: 0px;
+    width: fit-content;
+}
+.calculator {
+    max-width: 380px;
+    padding: 40px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    background-color: #000000;
+    border-radius: 50px;
+    border: 15px solid gray;
+
+    top: 10px;
+    
+    gap: 4px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.screen {
+    color:papayawhip;
+    font-size: 30px;
+    text-align: right;
+
+    height: 100px;
+    width: 350px;
+    border: 2px solid rgba(250, 235, 215, 0.336);
+    border-radius: 25px;
+    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+}
+
+#displayOperation {
+    font-size: 12px;
+    color: rgba(255, 239, 213, 0.778);
+}
+.double {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+
+.double {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+.double-button {
+    padding-left: 22px;
+    padding-right: 138px;
+}
+
+.button {
+    background: radial-gradient(circle at 35px 35px, #333333, #000000);
+    border-radius: 100px;
+    color: papayawhip;
+
+    width: 55px;
+    height: 55px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    border: 0px;
+
+    perspective: 1200px;
+    perspective-origin: 50px 50px;
+
+    transition: background 2s;
+}
+
+.button:hover {
+    background: radial-gradient(circle at 30px 30px, rgb(95, 95, 95), #000000);
+    font-size: 30px;
+    
+
+}
+
+.light-button {
+    background: radial-gradient(circle at 35px 35px, beige, #000000);
+    background-color: beige;
+    color: black;
+}
+
+.light-button:hover {
+    background: radial-gradient(circle at 30px 30px, rgb(171, 171, 153), #000000);
+}
+.orange-button {
+    background: radial-gradient(circle at 35px 35px, #fa9607, #000000);
+}
+
+.orange-button:hover {
+    background: radial-gradient(circle at 30px 30px, #f6a12b, #000000);
+}
+
+.red-button {
+    background: radial-gradient(circle at 35px 35px, crimson, #000000);
+}
+
+.red-button:hover {
+    background: radial-gradient(circle at 30px 30px, rgb(242, 55, 93), #000000);
+}
+
+
+
+sup {
+    font-size: 50%;
+}
